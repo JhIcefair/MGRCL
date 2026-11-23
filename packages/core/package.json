@@ -1,0 +1,6 @@
+{
+  "name": "@mgrcl/core",
+  "version": "0.0.1",
+  "private": true,
+  "description": "MGRCL core domain types and logic"
+}

@@ -1,0 +1,22 @@
+/**
+ * MGRCL 应用壳占位样式
+ *
+ * U0-02 只迁移原有的空窗口占位壳；U1 做真实主界面时替换。
+ * 只允许引用 token，不写十六进制色值。
+ */
+
+.app-shell {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  background: var(--color-bg);
+  user-select: none;
+}
+
+.app-shell__wordmark {
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+}

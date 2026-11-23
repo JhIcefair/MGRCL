@@ -1,0 +1,20 @@
+{
+  "name": "mgrcl",
+  "version": "0.0.1",
+  "private": true,
+  "description": "MGRCL launcher",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @mgrcl/desktop",
+    "build": "npm run build -w @mgrcl/desktop",
+    "typecheck": "tsc -b --noEmit",
+    "build:icon": "node scripts/build-icon.mjs"
+  },
+  "devDependencies": {
+    "png-to-ico": "^3.0.2",
+    "typescript": "^7.0.2"
+  }
+}

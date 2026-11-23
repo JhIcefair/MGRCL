@@ -1,0 +1,77 @@
+/**
+ * MGRCL 设计 token
+ *
+ * 本文件是 renderer 中唯一允许出现十六进制色值的样式文件。
+ * 色值来源：docs/界面设计规范.md §4；字体来源：§5。
+ * 页面与组件只引用语义 token（--color-*）或基础 token（--mgrcl-*），不要写死色值。
+ */
+
+:root {
+  /* 基础色：只在此处定义一次，语义 token 全部引用这里 */
+  --mgrcl-pink-500: #ff9fcd;
+  --mgrcl-pink-300: #ffd4f2;
+  --mgrcl-pink-50: #fce3f7;
+  --mgrcl-purple-700: #662d91;
+  --mgrcl-purple-900: #411144;
+  --mgrcl-yellow-300: #f9fe1f;
+  --mgrcl-yellow-600: #dbb412;
+  --mgrcl-gray-500: #878787;
+  --mgrcl-white: #ffffff;
+
+  /* 语义色 */
+  --color-bg: var(--mgrcl-pink-50);
+  --color-brand: var(--mgrcl-pink-500);
+  --color-surface: var(--mgrcl-pink-300);
+  --color-text: var(--mgrcl-purple-900);
+  --color-text-accent: var(--mgrcl-purple-700);
+  --color-border: var(--mgrcl-gray-500);
+  --color-button-bg: var(--mgrcl-pink-300);
+  --color-button-text: var(--mgrcl-purple-700);
+  --color-button-border: var(--mgrcl-white);
+  --color-icon: var(--mgrcl-purple-900);
+  --color-more: var(--mgrcl-yellow-300);
+  --color-more-outline: var(--mgrcl-yellow-600);
+
+  /* 字体 */
+  --font-family-sans: "Microsoft YaHei", "微软雅黑", "Segoe UI", sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* 间距 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* 边框 / 圆角 */
+  --border-width-thin: 1px;
+  --border-width-button: 3px;
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* 阴影 */
+  --shadow-menu: 0 2px 8px rgb(65 17 68 / 18%);
+  --shadow-dialog: 0 8px 24px rgb(65 17 68 / 20%);
+
+  /* 层级 */
+  --z-menu: 100;
+  --z-dialog: 200;
+  --z-toast: 300;
+
+  /* 动效 */
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --focus-ring: 2px solid var(--mgrcl-purple-700);
+  --focus-offset: 2px;
+}

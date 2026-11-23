@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "../../out/apps-desktop.tsbuildinfo"
+  },
+  "include": ["electron.vite.config.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "out"]
+}

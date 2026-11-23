@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node", "vite/client"],
+    "noEmit": true,
+    "composite": true,
+    "tsBuildInfoFile": "./out/.tsbuildinfo"
+  },
+  "include": [
+    "apps/desktop/electron.vite.config.ts",
+    "apps/desktop/src/**/*.ts",
+    "apps/desktop/src/**/*.tsx"
+  ],
+  "exclude": ["node_modules", "out"]
+}

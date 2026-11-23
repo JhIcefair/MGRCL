@@ -1,0 +1,16 @@
+node_modules/
+.npm-cache/
+out/
+release/
+*.tsbuildinfo
+
+*.log
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 公开仓不建 docs/
+docs/
